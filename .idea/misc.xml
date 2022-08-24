@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_main.xml" value="0.3442028985507246" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/fragment_details.xml" value="0.3446557971014493" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/fragment_home.xml" value="0.3446557971014493" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_recipe_row.xml" value="0.3446557971014493" />
       </map>
     </option>
   </component>
