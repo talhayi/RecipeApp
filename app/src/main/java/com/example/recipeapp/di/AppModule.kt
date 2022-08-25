@@ -2,13 +2,13 @@ package com.example.recipeapp.di
 
 import com.example.recipeapp.api.ApiService
 import com.example.recipeapp.util.Util.BASE_URL
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 
@@ -19,9 +19,11 @@ object AppModule {
     @Provides
     @Singleton
     fun provideRetrofitInstance():ApiService =
-        Retrofit.Builder()
+             Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiService::class.java)
+
+
 }

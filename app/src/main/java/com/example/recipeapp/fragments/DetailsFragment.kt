@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.example.recipeapp.R
 import com.example.recipeapp.databinding.FragmentDetailsBinding
 import com.example.recipeapp.databinding.FragmentHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {
 

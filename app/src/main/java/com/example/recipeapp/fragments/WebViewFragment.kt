@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.example.recipeapp.R
 import com.example.recipeapp.databinding.FragmentHomeBinding
 import com.example.recipeapp.databinding.FragmentWebViewBinding
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class WebViewFragment : Fragment(R.layout.fragment_web_view) {
 
