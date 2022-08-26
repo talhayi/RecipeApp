@@ -2,11 +2,14 @@ package com.example.recipeapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.recipeapp.databinding.FragmentHomeBinding
 import com.example.recipeapp.databinding.ItemRecipeRowBinding
+import com.example.recipeapp.fragments.HomeFragmentDirections
 import com.example.recipeapp.models.Recipe
 
 class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
@@ -51,6 +54,13 @@ class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
                 crossfade(1000)
             }
         }
+
+        holder.itemView.setOnClickListener {
+
+            val action = HomeFragmentDirections.actionHomeFragmentToDetailsFragment(currentRecipe)
+            Navigation.findNavController(it).navigate(action)
+        }
+
     }
 
     override fun getItemCount(): Int {
