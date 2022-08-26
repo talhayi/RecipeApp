@@ -1,8 +1,11 @@
 package com.example.recipeapp.models
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Recipe(
 
 	@SerializedName("thumbnail")
@@ -13,5 +16,5 @@ data class Recipe(
 	val href: String?,
 	@SerializedName("title")
 	val title: String?
-)
+): Parcelable
 
