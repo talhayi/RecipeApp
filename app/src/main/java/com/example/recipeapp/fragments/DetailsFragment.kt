@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import coil.load
 import com.example.recipeapp.R
@@ -34,17 +35,21 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
         recipe = args.recipe
 
-        populateUI()
+        showDetail()
 
     }
 
-    private fun populateUI(){
+    private fun showDetail(){
         binding.apply {
             titleTextView.text = recipe.title
             ingredientsTextView.text = recipe.ingredients
             detailImageView.load(recipe.thumbnail){
                 crossfade(true)
                 crossfade(1000)
+            }
+            button.setOnClickListener{
+                val action = DetailsFragmentDirections.actionDetailsFragmentToWebViewFragment(recipe)
+                Navigation.findNavController(it).navigate(action)
             }
         }
 
