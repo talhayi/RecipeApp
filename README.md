@@ -1,4 +1,4 @@
-- #### This project is written with Kotlin. MVVM architecture is used.
+- #### This project is written with Kotlin. MVVM architecture and DataBinding are used.
 - #### When we open the application, recipes are listed on the HomePage. When clicking on the recipe is showed the details of that recipe. When the button on the detail page is clicked, it goes to the web page of the recipe.
 
 ## Important Libraries in Project
