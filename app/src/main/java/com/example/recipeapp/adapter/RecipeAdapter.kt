@@ -1,6 +1,8 @@
 package com.example.recipeapp.adapter
 
+import android.os.Parcelable
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -11,11 +13,14 @@ import com.example.recipeapp.databinding.FragmentHomeBinding
 import com.example.recipeapp.databinding.ItemRecipeRowBinding
 import com.example.recipeapp.fragments.HomeFragmentDirections
 import com.example.recipeapp.models.Recipe
+import kotlinx.parcelize.Parcelize
 
-class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
+class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>(){
 
     class RecipeViewHolder(val binding: ItemRecipeRowBinding) :
-        RecyclerView.ViewHolder(binding.root)
+        RecyclerView.ViewHolder(binding.root){
+
+        }
 
     private val diffCallBack = object : DiffUtil.ItemCallback<Recipe>() {
         override fun areItemsTheSame(
@@ -40,12 +45,15 @@ class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
-        return RecipeViewHolder(ItemRecipeRowBinding.inflate(
-            LayoutInflater.from(parent.context),parent,false
+        return RecipeViewHolder( ItemRecipeRowBinding.inflate(LayoutInflater.from(parent.context),parent,false
         ))
     }
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
+        val currentRecipe = recipe[position]
+        holder.binding.recipe = currentRecipe
+
+        /*
         val currentRecipe = recipe[position]
         holder.binding.apply {
             textView.text=currentRecipe.title
@@ -54,7 +62,7 @@ class RecipeAdapter : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
                 crossfade(1000)
             }
         }
-
+*/
         holder.itemView.setOnClickListener {
 
             val action = HomeFragmentDirections.actionHomeFragmentToDetailsFragment(currentRecipe)

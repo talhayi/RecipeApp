@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="recipe"
+            type="com.example.recipeapp.models.Recipe" />
+    </data>
+
 <androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="180dp"
@@ -20,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:scaleType="fitXY"
+            android:downloadUrl="@{recipe.thumbnail}"
             app:srcCompat="@drawable/ic_launcher_background"/>
 
         <TextView
@@ -29,8 +38,11 @@
             android:layout_margin="10dp"
             android:textColor="@color/black"
             android:textSize="15sp"
-            tools:text="Recipe Title">
+            tools:text="@{recipe.title}">
 
         </TextView>
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
+</layout>

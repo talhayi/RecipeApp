@@ -22,6 +22,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     private val args : DetailsFragmentArgs by navArgs()
     private lateinit var recipe: Recipe
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,12 +42,16 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
     private fun showDetail(){
         binding.apply {
+            //DataBinding is used
+            detailRecipe = recipe
+            /*
             titleTextView.text = recipe.title
             ingredientsTextView.text = recipe.ingredients
             detailImageView.load(recipe.thumbnail){
                 crossfade(true)
                 crossfade(1000)
             }
+             */
             button.setOnClickListener{
                 val action = DetailsFragmentDirections.actionDetailsFragmentToWebViewFragment(recipe)
                 Navigation.findNavController(it).navigate(action)
