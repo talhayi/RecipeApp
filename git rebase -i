@@ -1,0 +1,108 @@
+[33mcommit aea05db00252200c746578a8629b59cfd9251bf7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mNewBranch[m[33m)[m
+Author: talhayi <56438103+talhayi@users.noreply.github.com>
+Date:   Wed Sep 7 14:14:00 2022 +0300
+
+    Update README.md
+
+[33mcommit 0e06a154fd44e3befe6b29abaeee4098d8831650[m
+Merge: 3f88a7b 0aa7624
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Mon Aug 29 02:27:41 2022 +0300
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 0aa76245bf044eb259e5cb620e6d27c9f1745355[m
+Author: talhayi <56438103+talhayi@users.noreply.github.com>
+Date:   Mon Aug 29 02:18:35 2022 +0300
+
+    Update README.md
+
+[33mcommit 49f2fb6ddce3c36d7366d3048afb1d4534bfa415[m
+Author: talhayi <56438103+talhayi@users.noreply.github.com>
+Date:   Mon Aug 29 02:17:15 2022 +0300
+
+    Update README.md
+
+[33mcommit 3f88a7b9222c01e07d131fe627daf857ee3b337b[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Mon Aug 29 01:23:48 2022 +0300
+
+    DataBinding created
+
+[33mcommit a025d9026271631e51ffb609f763277b0628c02e[m
+Author: talhayi <56438103+talhayi@users.noreply.github.com>
+Date:   Sun Aug 28 22:20:13 2022 +0300
+
+    Create README.md
+
+[33mcommit 1ddc60e4ad9f28f0c0b7a3f6383f511f928876bb[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Sat Aug 27 18:25:01 2022 +0300
+
+    show data at WebViewFragment
+
+[33mcommit b7bdc5615e34db8a4ae11a384005168b0a42a175[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Fri Aug 26 19:45:10 2022 +0300
+
+    show data at DetailsFragment
+
+[33mcommit de046760403e13d0ed88dab4e7a25f65b43afaf5[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Fri Aug 26 18:21:41 2022 +0300
+
+    DetailsFragment design created
+
+[33mcommit c3ceec7135c5c4654c2cf42f503dcb06759008f0[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Thu Aug 25 23:43:48 2022 +0300
+
+    RecipeAdapter created
+
+[33mcommit e57501da11d4c0945f7e75e5a32f494302e0b5d4[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Wed Aug 24 18:44:38 2022 +0300
+
+    Recyclerview design created
+
+[33mcommit 40e536d44dabae852ff0851c3afb03b7f2679bc1[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Tue Aug 23 18:01:12 2022 +0300
+
+    Navigation created
+
+[33mcommit 63851d09a2046d2810fcbba6a8fc7cd0d056d429[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Tue Aug 23 17:51:40 2022 +0300
+
+    Fragments created
+
+[33mcommit a058d2b184d77901d257c0130939f0087f0abaad[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Mon Aug 22 03:50:48 2022 +0300
+
+    RecipeViewModel created
+
+[33mcommit dd78f39df5fc5b1750b27887503bfe3f386d89bb[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Sun Aug 21 21:25:53 2022 +0300
+
+    RecipeRepository crated
+
+[33mcommit ab9f64c7473a1490c04af153ecc7f5cae9769af8[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Sat Aug 20 00:20:11 2022 +0300
+
+    Dagger Hilt crated
+
+[33mcommit 9c4450006a78c6c9fb1784342a2431aa2e08e67d[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Fri Aug 19 21:10:47 2022 +0300
+
+    Libraries added
+
+[33mcommit db1a14619ce6e7649c9de81ae2cbc4ac0aea5317[m
+Author: talhayi <talhayldrm23@gmail.com>
+Date:   Thu Aug 18 14:11:40 2022 +0300
+
+    initial commit

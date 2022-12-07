@@ -15,6 +15,8 @@ object Util {
 
 }
 
+
+
 @BindingAdapter("android:downloadUrl")
 fun downloadImage(view: ImageView, url: String?) {
     view.load(url) {
